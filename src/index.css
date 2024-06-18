@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color:  #20242d;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 800;
+}
+span,
+.primary-color {
+  background-image: linear-gradient(to right,#dd32f3,#ce90cb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+ul li a{
+  color:#20242d;
+}
+.bg-primary-color {
+  background-image: linear-gradient(to right,#6b2b72,#a5079d);
+}
+
+
+/* Media query to hide the div when screen width is between 640px and 767px */
+@media screen and (min-width: 640px) and (max-width: 967px) {
+  .aboutmepic{
+    display: none;
+  }
+  .aboutme{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .aboutmepic{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+ #id{margin-top: 3px;}
+}
+
+
